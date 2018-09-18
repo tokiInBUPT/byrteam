@@ -37,8 +37,11 @@ collections:
                 name: title
                 widget: string
               - label: Image
-                name: url
+                name: imgUrl
                 widget: image
+              - label: Url
+                name: url
+                widget: string
       - label: 中部介绍
         name: groups
         file: "data/groups.json"

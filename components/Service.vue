@@ -10,8 +10,8 @@
     </div>
     <div class="item-list">
       <div class="item" v-for="(item,index) in itemList" :key="index">
-        <a href="#">
-          <img :src="item.url" />
+        <a :href="item.url">
+          <img :src="item.imgUrl" />
           <div class="title">{{item.title}}</div>
         </a>
       </div>

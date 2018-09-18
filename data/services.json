@@ -1,28 +1,34 @@
 {
     "services": [
         {
-            "url": "/uploads/services-byrbbs.png",
-            "title": "北邮人论坛"
+            "imgUrl": "/uploads/services-byrbbs.png",
+            "title": "北邮人论坛",
+            "url":"https://bbs.byr.cn"
         },
         {
-            "url": "/uploads/services-byrbt.png",
-            "title": "北邮人 BT"
+            "imgUrl": "/uploads/services-byrbt.png",
+            "title": "北邮人 BT",
+            "url":"https://bt.byr.cn/"
         },
         {
-            "url": "/uploads/services-iptv.png",
-            "title": "北邮人 IPTV"
+            "imgUrl": "/uploads/services-iptv.png",
+            "title": "北邮人 IPTV",
+            "url":"https://tv.byr.cn/"
         },
         {
-            "url": "/uploads/services-byrio.png",
-            "title": "BYRIO开源社区"
+            "imgUrl": "/uploads/services-byrio.png",
+            "title": "BYRIO开源社区",
+            "url":"https://byrio.org/"
         },
         {
-            "url": "/uploads/services-blogroll.png",
-            "title": "北邮人博客圈"
+            "imgUrl": "/uploads/services-blogroll.png",
+            "title": "北邮人博客圈",
+            "url":"https://planet.byr.moe/"
         },
         {
-            "url": "/uploads/services-yiban.png",
-            "title": "易班生活服务"
+            "imgUrl": "/uploads/services-yiban.png",
+            "title": "易班生活服务",
+            "url":"???????"
         }
     ]
 }
