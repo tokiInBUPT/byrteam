@@ -15,7 +15,14 @@
 				</div>
 
 				<div class="slideCtn">
-					<swiper-arrows class="arrows" :isFirst="group.slideCurrentIdx == 0" :isLast=" group.slideCurrentIdx == (group.slides.length - 1)" @next="group.slideCurrentIdx++" @prev="group.slideCurrentIdx--" />
+					<swiper-arrows 
+						class="arrows" 
+						:isFirst="group.slideCurrentIdx == 0" 
+						:isLast=" group.slideCurrentIdx == (group.slides.length - 1)" 
+						@next="group.slideCurrentIdx++" 
+						@prev="group.slideCurrentIdx--"
+						@first="group.slideCurrentIdx=0"
+						@last="group.slideCurrentIdx = (group.slides.length - 1)" />
 					<swiper>
 						<swiper-item v-for="(slide,$index) in group.slides" :key="$index" :show="group.slideCurrentIdx == $index">
 							<div>{{slide.text}}</div>

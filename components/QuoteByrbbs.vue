@@ -12,7 +12,13 @@
             ——{{item.from}}
           </swiper-item>
         </swiper>
-        <swiper-arrows :isFirst="this.curIdx == 0" :isLast=" this.curIdx == (this.quotes.length - 1)" @next="curIdx++" @prev="curIdx--" />
+        <swiper-arrows 
+          :isFirst="this.curIdx == 0" 
+          :isLast=" this.curIdx == (this.quotes.length - 1)" 
+          @next="curIdx++" 
+          @prev="curIdx--"
+          @last="curIdx=(this.quotes.length - 1)"
+          @first="curIdx=0" />
       </div>
     </div>
   </section>

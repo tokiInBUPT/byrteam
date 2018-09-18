@@ -11,7 +11,13 @@
                 <btn>立即报名</btn>
                 <btn :flat="true">加群咨询</btn>
             </div>
-            <swiper-arrows :isFirst="this.introCurrentIdx == 0" :isLast=" this.introCurrentIdx == (this.intros.length - 1)" @next="introCurrentIdx++" @prev="introCurrentIdx--" />
+            <swiper-arrows 
+                :isFirst="this.introCurrentIdx == 0" 
+                :isLast=" this.introCurrentIdx == (this.intros.length - 1)"
+                @next="introCurrentIdx++" 
+                @prev="introCurrentIdx--"
+                @last="this.introCurrentIdx = (this.intros.length - 1)"
+                @first="this.introCurrentIdx = 0" />
         </div>
 
         <swiper class="intro-right">
