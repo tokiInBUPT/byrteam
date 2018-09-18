@@ -7,11 +7,8 @@
         </a>
         <nav class="nav">
           <ul>
-            <li>
-              <a href="#">导航链接</a>
-            </li>
-            <li>
-              <a href="#">导航链接</a>
+            <li v-for="nav in navs" :key="nav.title">
+              <a :href="nav.url">{{nav.title}}</a>
             </li>
           </ul>
         </nav>
@@ -39,6 +36,7 @@ import Enroll from "~/components/Enroll.vue";
 import Footer from "~/components/Footer.vue";
 import Service from "~/components/Service.vue";
 import QuoteByrbbs from "~/components/QuoteByrbbs.vue";
+import {navs} from "~/data/intro.json";
 export default {
   components: {
     Swiper,
@@ -54,7 +52,7 @@ export default {
   },
   data() {
     return {
-      a: true
+      navs
     };
   }
 };

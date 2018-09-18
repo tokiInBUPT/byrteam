@@ -20,5 +20,15 @@
       "content": "成立于 2003 年 ，来自北邮人论坛、北邮人 BT 和 BYRIO 社区，传统悠久、技术深厚、大佬如云6",
       "imgUrl": "/uploads/slide-main-tshirt.png"
     }
+  ],
+  "navs": [
+    {
+      "title": "导航链接1",
+      "url": "https://baidu.com"
+    },
+    {
+      "title": "导航链接2",
+      "url": "https://qq.com"
+    }
   ]
 }
