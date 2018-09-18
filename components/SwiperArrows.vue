@@ -3,7 +3,7 @@
             <div class="arrows">
 
                 <span @click="isFirst ? $emit('last') : $emit('prev')">&lt;</span>
-                <span  @click="isLast ? $('first') : $emit('next')">&gt;</span>
+                <span  @click="isLast ? $emit('first') : $emit('next')">&gt;</span>
             </div>
 </template>
 <script>

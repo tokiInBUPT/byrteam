@@ -12,12 +12,12 @@
                 <btn :flat="true">加群咨询</btn>
             </div>
             <swiper-arrows 
-                :isFirst="this.introCurrentIdx == 0" 
-                :isLast=" this.introCurrentIdx == (this.intros.length - 1)"
+                :isFirst="introCurrentIdx == 0" 
+                :isLast=" introCurrentIdx == (intros.length - 1)"
                 @next="introCurrentIdx++" 
                 @prev="introCurrentIdx--"
-                @last="this.introCurrentIdx = (this.intros.length - 1)"
-                @first="this.introCurrentIdx = 0" />
+                @last="introCurrentIdx = (intros.length - 1)"
+                @first="introCurrentIdx = 0" />
         </div>
 
         <swiper class="intro-right">
