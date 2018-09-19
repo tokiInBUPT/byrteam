@@ -26,15 +26,15 @@ collections:
                 name: img
                 widget: image
           - name: navs
-              label: 顶部导航链接
-              widget: list
-              fields:
-                - label: Title
-                  name: title
-                  widget: string
-                - label: Url
-                  name: url
-                  widget: string
+            label: 顶部导航链接
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Url
+                name: url
+                widget: string
       - label: 服务
         name: services
         file: "data/services.json"
