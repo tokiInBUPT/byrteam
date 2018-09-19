@@ -24,25 +24,25 @@ export default {
             title: '北邮人博客圈',
             desc: '一个汇聚了北邮人学长们优秀博客的地方',
             url: 'http://planet.byr.moe/',
-            img: 'article/byrplanet.png'
+            img: '/uploads/byrplanet.png'
           },
           {
             title: '北邮人 BYRIO 小分队从重庆 SOSCON 18 学生开源年会胜利归来',
             desc: 'BYRIO 媒体',
             url: 'SOSCON 18 演讲：为了创意者——开源社区与精神的拓展和延续',
-            img: 'article/soscon.png'
+            img: '/uploads/soscon.png'
           },
           {
             title: '北邮 2018 考研专刊（上册）正式发布',
             desc: '北邮人论坛 考研专板',
             url: 'https://bbs.byr.cn/#!article/AimGraduate/1124437',
-            img: 'article/AimGraduate.png'
+            img: '/uploads/AimGraduate.png'
           },
           {
             title: '北邮飞跃手册 留学指南',
             desc: '北邮人论坛 飞跃重洋板块',
             url: 'https://bbs.byr.cn/#!article/GoAbroad/359918',
-            img: 'article/GoAbroad.png'
+            img: '/uploads/GoAbroad.png'
           },
         ];
       }

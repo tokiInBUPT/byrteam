@@ -23,7 +23,7 @@
         <swiper class="intro-right">
 
             <swiper-item v-for="(item,$index) in intros" :key="item.title" :show="introCurrentIdx == $index">
-                <img :src="item.imgUrl" />
+                <img :src="item.img" />
             </swiper-item>
         </swiper>
 
