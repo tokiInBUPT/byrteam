@@ -13,16 +13,6 @@
           "title": "计划中项目",
           "url": "http://wiki.byr.moe"
         }
-      ],
-      "slides": [
-        {
-          "text": "我们维护 BYRIO 北邮互联网与开源社区，参与贡献 KDE.org 等国际开源软件项目，还有机会和清华 TUNA 、中科大 USTCLUG 的小伙伴们一起交流。",
-          "img": "/uploads/soscon.png"
-        },
-        {
-          "text": "我们维护 BYRIO 北邮互联网与开源社区，参与贡献 KDE.org 等国际开源软件项目，还有机会 和清华 TUNA 、中科大 USTCLUG 的小伙伴们一起交流。",
-          "img": "/uploads/soscon.png"
-        }
       ]
     },
     {
@@ -38,17 +28,11 @@
           "title": "计划中项目",
           "url": "http://wiki.byr.moe"
         }
-      ],
-      "slides": [
-        {
-          "text": "我们维护 BYRIO 北邮互联网与开源社区，参与贡献 KDE.org 等国际开源软件项目，还有机会和清华 TUNA 、中科大 USTCLUG 的 小伙伴们一起交流。",
-          "img": "/uploads/soscon.png"
-        },
-        {
-          "text": "我们维护 BYRIO 北邮互联网与开源社区，参与贡献 KDE.org 等国际开源软件项目，还有机会和清华 TUNA 、中科大 USTCLUG 的小伙伴们一起交流。",
-          "img": "/uploads/soscon.png"
-        }
       ]
+    },
+    {
+      "name": "产品运营组",
+      "name_en": "PRODUCT & OPERATION GROUP"
     }
   ]
 }
