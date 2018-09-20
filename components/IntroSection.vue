@@ -4,7 +4,7 @@
             <swiper>
                 <swiper-item v-for="(item,$index) in intros" :key="item.title" :show="introCurrentIdx == $index">
                     <span class="title">{{item.title}}</span>
-                    <p>{{item.content}}</p>
+                    <p v-html="'<p>'+item.content.replace(/\<br\>/g,'</p><p>')+'</p>'"></p>
                 </swiper-item>
             </swiper>
             <div class="btns">
@@ -52,7 +52,7 @@ export default {
 </script>
 <style lang="sass" scoped>
 .swiper 
-    height: 13rem
+    height: 16rem
     width: 110%
 
 .intro 
@@ -69,7 +69,7 @@ export default {
         text-align: right
         img
             margin-top: 80px
-            margin-right: -30px
+            margin-right: -45px
             height: 380px
             width: 100%
             object-fit: cover
@@ -90,16 +90,19 @@ export default {
     z-index: 100
     position: relative
     margin-top: 7rem
-    width: 23rem
+    width: 31rem
     .title
         font-size: 1.9rem
+        display: block
+        margin-bottom: 0.5rem
+        width: 125%
         // letter-spacing: 5px
         // letter-spacing: 2px
     p
         font-size: 0.9rem
         color: rgb(125, 125, 125)
         padding-top: 5px
-        width: 75%
+        width: 100%
 
     .btns
         display: flex

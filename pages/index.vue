@@ -88,6 +88,7 @@ li-clear() {
   a.logo {
     img {
       height: 40px;
+      margin-top 12px
     }
   }
 

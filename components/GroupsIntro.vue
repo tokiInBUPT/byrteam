@@ -6,7 +6,7 @@
 				<div class="info">
 					<h3>{{ group.name }}</h3>
 					<h4>{{ group.name_en }}</h4>
-					<p v-html="group.intro" :style="'text-align-last:'+(index%2==0)?'left':'right'"></p>
+					<p v-html="'<p>'+group.intro.replace(/\<br\>/g,'</p><p>')+'</p>'" :style="'text-align-last:'+(index%2==0)?'left':'right'"></p>
 					<ul class="links">
 						<li v-for="(link,index) in group.links" :key="index">
 							<a target="_blank"  :href="link.url">{{ link.title }}</a>
@@ -25,7 +25,7 @@
 						@last="group.slideCurrentIdx = (group.slides.length - 1)" />
 					<swiper>
 						<swiper-item v-for="(slide,$index) in group.slides" :key="$index" :show="group.slideCurrentIdx == $index">
-							<div v-html="slide.text"></div>
+							<div v-html="'<p>'+slide.text.replace(/\<br\>/g,'</p><p>')+'</p>'"></div>
 							<a target="_blank" :href="slide.link">
 								<img :src="slide.img" />
 							</a>
