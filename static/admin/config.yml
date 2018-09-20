@@ -80,7 +80,7 @@ collections:
                     label: Url
                     widget: string
               - label: Sildes
-                name: sildes
+                name: slides
                 widget: list
                 fields:
                   - name: text
