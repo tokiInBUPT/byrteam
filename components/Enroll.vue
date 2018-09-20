@@ -6,16 +6,39 @@
     </div>
     <div class="form">
       <div class="inputs">
-        <input class="input" placeholder="姓名" />
-        <input class="input" placeholder="手机" />
-        <input class="input" placeholder="年级" />
-        <input class="input" placeholder="学院" />
+        <input class="input" placeholder="姓名" v-model="inputs.name" />
+        <input class="input" placeholder="手机" v-model="inputs.phone" />
+        <input class="input" placeholder="年级" v-model="inputs.year" />
+        <!-- <input class="input" placeholder="学院" v-model="inputs.school" /> -->
+        <select class="input select" v-model="inputs.school">
+          <option disabled selected="selected" value="学院">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学院</option>
+          <option value="信息与通信工程学院">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;信息与通信工程学院</option>
+          <option value="电子工程学院">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电子工程学院</option>
+          <option value="计算机学院">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;计算机学院</option>
+          <option value="自动化学院">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;自动化学院</option>
+          <option value="软件学院">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;软件学院</option>
+          <option value="数字媒体与设计艺术学院">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数字媒体与设计艺术学院</option>
+          <option value="现代邮政学院">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;现代邮政学院</option>
+          <option value="网络空间安全学院">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网络空间安全学院</option>
+          <option value="光电信息学院">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;光电信息学院</option>
+          <option value="理学院">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;理学院</option>
+          <option value="经济管理学院">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;经济管理学院</option>
+          <option value="公共管理学院">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公共管理学院</option>
+          <option value="人文学院">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;人文学院</option>
+          <option value="马克思主义学院">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;马克思主义学院</option>
+          <option value="国际学院">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;国际学院</option>
+          <option value="网络教育学院">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网络教育学院</option>
+          <option value="民族教育学院">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;民族教育学院</option>
+          <option value="网络技术研究院">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网络技术研究院</option>
+          <option value="信息光子学与光通信研究院">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;信息光子学与光通信研究院</option>
+          <option value="感知技术与产业研究院">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;感知技术与产业研究院</option>
+        </select>
       </div>
       <div class="department">
         <span class="title">部门</span>
         <span @click="()=>OnJobClick(index)" class="job" :class="{'job-sel':item.selected}" v-for="(item,index) in jobList" :key="index">{{item.title}}</span>
       </div>
-      <button class="enroll" type="button">立即报名</button>
+      <button class="enroll" type="button" @click="()=>handleSubmit()">立即报名</button>
     </div>
   </div>
 </template>
@@ -24,7 +47,23 @@ export default {
   methods: {
     OnJobClick(index) {
       this.jobList[index].selected ^= 1;
+    },
+    handleSubmit() {
+      localStorage.setItem(`byr-inputs`, this.inputs);
+      localStorage.setItem(`byr-department`, this.jobList);
+      localStorage.setItem(`byr-trans-session`, 'true');
+      window.location.href = "/joinus";
     }
+  },
+  data: function() {
+    return {
+      inputs: {
+        name: '',
+        phone: '',
+        year: '',
+        school: '学院'
+      },
+    };
   },
   props: {
     jobList: {
@@ -89,6 +128,9 @@ $author: jasonwu;
         &:focus{
           background-color: #f3f3f3;
         }
+        &.select{
+          width: 13.8rem;
+        }
       }
     }
     .department {
@@ -102,15 +144,17 @@ $author: jasonwu;
       .job {
         font-size: 13px;
         padding: 0.55rem 0.55rem;
-        margin: 0 0.31rem;
+        margin: 0.2em 0.31rem;
         transition: all 0.1s;
         display: inline-block;
+        border: 1px solid transparent;
       }
       .job:hover {
         cursor: pointer;
       }
       .job-sel {
         background-color: #f8f8f8;
+        border: 1px solid $theme;
       }
     }
     .enroll {
