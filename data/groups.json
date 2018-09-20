@@ -14,15 +14,19 @@
     {
       "name": "技术组",
       "name_en": "DEVELOPE GROUP",
-      "intro": "BYR 坚强的技术后盾，新产品的研发中心。坚强的技术后盾， 新产品的研发中心。坚强的技术后盾，新产品的研发中心。<br>希望热爱技术的小伙伴加入我们一起玩！",
+      "intro": "BYR 坚强的技术后盾，新产品的研发中心。<br>我们研究 Node.js 、Python 和 PHP ，我们部署 CI 、集群和 OpenShift ，我们讨论前后端 Web 开发和折腾智能硬件，我们维护开源技术社区并和清华科大的小伙伴们交流，我们维护论坛和 BT 、开发和设计新产品，探讨一切有趣的技术话题！<br>希望热爱技术的小伙伴加入我们一起玩！",
       "links": [
         {
-          "title": "计划中 项目",
-          "url": "http://wiki.byr.moe"
+          "title": "Github",
+          "url": "http://github.com/byrIo"
         },
         {
           "title": "计划中项目",
-          "url": "http://wiki.byr.moe"
+          "url": "http://wiki.byr.moe/books/byrio/page/circle-idea"
+        },
+        {
+          "title": "BYRIO 技术社区",
+          "url": "http://byrio.org"
         }
       ],
       "slides": []
