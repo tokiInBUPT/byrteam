@@ -32,10 +32,12 @@ export default {
       default: () => {
         return [
           { title: "技术组", selected: true },
+          { title: "UI组", selected: false },
           { title: "美工组", selected: false },
-          { title: "文宣组", selected: true },
-          { title: "外联组", selected: false },
-          { title: "新媒体组", selected: false }
+          { title: "文宣组", selected: false },
+          { title: "站务组", selected: false },
+          { title: "新媒体组", selected: false },
+          { title: "产品运营组", selected: true },
         ];
       }
     }
@@ -74,7 +76,7 @@ $author: jasonwu;
       flex-wrap: wrap;
       justify-content: space-between;
       .input {
-        width: 11.7rem;
+        width: 11.8rem;
         margin: 0.2rem 0;
         height: 3rem;
         line-height: 150%;
@@ -93,14 +95,16 @@ $author: jasonwu;
       padding: 0.95rem 0;
       .title {
         font-size: 0.85rem;
-        margin: 0 1.55rem 0 1.85rem;
+        margin: 25px 1.55rem 0 1.85rem;
         color: #666;
+        float: left;
       }
       .job {
         font-size: 13px;
         padding: 0.55rem 0.55rem;
         margin: 0 0.31rem;
         transition: all 0.1s;
+        display: inline-block;
       }
       .job:hover {
         cursor: pointer;
