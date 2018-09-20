@@ -9,7 +9,7 @@
 					<p v-html="group.intro"></p>
 					<ul class="links">
 						<li v-for="(link,index) in group.links" :key="index">
-							<a :href="link.url">{{ link.title }}</a>
+							<a target="_blank"  :href="link.url">{{ link.title }}</a>
 						</li>
 					</ul>
 				</div>
@@ -25,7 +25,7 @@
 						@last="group.slideCurrentIdx = (group.slides.length - 1)" />
 					<swiper>
 						<swiper-item v-for="(slide,$index) in group.slides" :key="$index" :show="group.slideCurrentIdx == $index">
-							<div>{{slide.text}}</div>
+							<div v-html="slide.text"></div>
 							<img :src="slide.img" />
 						</swiper-item>
 					</swiper>

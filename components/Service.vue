@@ -10,17 +10,17 @@
     </div>
     <div class="item-list">
       <div class="item" v-for="(item,index) in itemList" :key="index">
-        <a :href="item.url">
+        <a target="_blank"  :href="item.url">
           <img :src="item.imgUrl" />
           <div class="title">{{item.title}}</div>
         </a>
       </div>
       <!-- <div class="item item-yiban">
         <ul>
-          <li><a href="#">易健身</a></li>
-          <li><a href="#">易签到</a></li>
-          <li><a href="#">易租借</a></li>
-          <li><a href="#">易物</a></li>
+          <li><a target="_blank"  href="#">易健身</a></li>
+          <li><a target="_blank"  href="#">易签到</a></li>
+          <li><a target="_blank"  href="#">易租借</a></li>
+          <li><a target="_blank"  href="#">易物</a></li>
         </ul>
       </div> -->
     </div>

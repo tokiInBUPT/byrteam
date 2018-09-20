@@ -2,13 +2,13 @@
   <div>
     <div class="page">
       <section class="header">
-        <a href="/" class="logo">
+        <a target="_blank"  href="/" class="logo">
           <img src="logo.png" />
         </a>
         <nav class="nav">
           <ul>
             <li v-for="nav in navs" :key="nav.title">
-              <a :href="nav.url">{{nav.title}}</a>
+              <a target="_blank"  :href="nav.url">{{nav.title}}</a>
             </li>
           </ul>
         </nav>

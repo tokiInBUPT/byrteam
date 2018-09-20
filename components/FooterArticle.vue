@@ -3,7 +3,7 @@
       <center><small style="color: #777">或者阅读更多 ...</small></center>
       <ul>
         <li class="article" v-for="(article,index) in articles" :key="index" v-bind:style="{ backgroundImage: `url('${article.img}')` }">
-          <a :href="article.url">
+          <a target="_blank"  :href="article.url">
             <h3>{{ article.title }}</h3>
             <h4>{{ article.desc }}</h4>
           </a>
