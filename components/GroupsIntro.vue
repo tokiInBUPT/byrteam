@@ -74,6 +74,7 @@ export default {
 					p
 						padding-right 0
 						padding-left 100px
+						text-align-last right
 				.slideCtn
 					left auto
 					right -60px
@@ -99,7 +100,6 @@ export default {
 					margin 20px 0 28px 0
 					padding-right 100px
 					text-align justify
-					
 					// max-width 400px
 				ul
 					padding 0
