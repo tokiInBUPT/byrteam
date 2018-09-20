@@ -49,8 +49,8 @@ export default {
       this.jobList[index].selected ^= 1;
     },
     handleSubmit() {
-      localStorage.setItem(`byr-inputs`, this.inputs);
-      localStorage.setItem(`byr-department`, this.jobList);
+      localStorage.setItem(`byr-inputs`, JSON.stringify(this.inputs));
+      localStorage.setItem(`byr-department`, JSON.stringify(this.jobList));
       localStorage.setItem(`byr-trans-session`, 'true');
       window.location.href = "/joinus";
     }
