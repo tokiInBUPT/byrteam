@@ -1,34 +1,34 @@
 {
-    "services": [
-        {
-            "imgUrl": "/uploads/services-byrbbs.png",
-            "title": "北邮人论坛",
-            "url":"https://bbs.byr.cn"
-        },
-        {
-            "imgUrl": "/uploads/services-byrbt.png",
-            "title": "北邮人 BT",
-            "url":"https://bt.byr.cn/"
-        },
-        {
-            "imgUrl": "/uploads/services-iptv.png",
-            "title": "北邮人 IPTV",
-            "url":"https://tv.byr.cn/"
-        },
-        {
-            "imgUrl": "/uploads/services-byrio.png",
-            "title": "BYRIO开源社区",
-            "url":"https://byrio.org/"
-        },
-        {
-            "imgUrl": "/uploads/services-blogroll.png",
-            "title": "北邮人博客圈",
-            "url":"https://planet.byr.moe/"
-        },
-        {
-            "imgUrl": "/uploads/services-yiban.png",
-            "title": "易班生活服务",
-            "url":"???????"
-        }
-    ]
+  "services": [
+    {
+      "title": "北邮人论坛",
+      "imgUrl": "/uploads/services-byrbbs.png",
+      "url": "https://bbs.byr.cn"
+    },
+    {
+      "title": "北邮人 BT",
+      "imgUrl": "/uploads/services-byrbt.png",
+      "url": "https://bt.byr.cn/"
+    },
+    {
+      "title": "北邮人 IPTV",
+      "imgUrl": "/uploads/services-iptv.png",
+      "url": "https://tv.byr.cn/"
+    },
+    {
+      "title": "BYRIO 开源社区",
+      "imgUrl": "/uploads/services-byrio.png",
+      "url": "https://byrio.org/"
+    },
+    {
+      "title": "北邮人博客圈",
+      "imgUrl": "/uploads/services-blogroll.png",
+      "url": "https://planet.byr.moe/"
+    },
+    {
+      "title": "易班生活服务",
+      "imgUrl": "/uploads/services-yiban.png",
+      "url": "???????"
+    }
+  ]
 }
