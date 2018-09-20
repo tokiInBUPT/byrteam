@@ -1,0 +1,12 @@
+stages:
+  - deploy
+deploy:
+  stage: deploy
+  only:
+    - master
+  script:
+    - rsync -av --exclude ".git" ./ /data/php-gitlab-sync/byrteam
+    - cd /data/php-gitlab-sync/byrteam
+    - npm install
+    - npm run generate
+    - sudo chgrp -R www-data dist/
