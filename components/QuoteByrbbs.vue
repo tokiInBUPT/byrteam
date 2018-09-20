@@ -46,7 +46,7 @@ export default {
 <style lang="scss" scoped>
 $author:jasonwu;
 .root {
-  margin: 80px 0;
+  margin: 50px 0 60px 0;
   width: 100%;
   display: flex;
   justify-content: center;
