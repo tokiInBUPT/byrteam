@@ -27,6 +27,8 @@
 import Swiper from "~/components/Swiper";
 import SwiperItem from "~/components/SwiperItem";
 import SwiperArrows from "~/components/SwiperArrows";
+import {quotes} from "~/data/intro.json";
+console.log(quotes)
 export default {
   components: {
     Swiper,
@@ -36,28 +38,7 @@ export default {
   data() {
     return {
       curIdx: 0,
-      quotes: [
-        {
-          content:
-            "“留学有‘飞跃重洋1234’，考研刷‘考研专版’，学习、选课、找工作 …… 论坛能解决我的一切需求。”",
-          from: "北邮457人论坛用户"
-        },
-        {
-          content:
-            "“留学有‘飞跃重洋’，考研刷‘考24356研专版’，学习、选课、找工作 …… 论坛能解决我的一切需求。”",
-          from: "北3邮人论43坛用户"
-        },
-        {
-          content:
-            "“留学有‘飞跃重洋’，考76890研刷‘考研专版’，学习、选课、找工作 …… 论坛能解决我的一切需求。”",
-          from: "北7邮人5论坛用户"
-        },
-        {
-          content:
-            "“留学有‘飞跃重洋’，考研刷345‘考研专版’，学习、选课、找工作 …… 论坛能解决我的一切需求。”",
-          from: "7北邮人论3坛用户"
-        }
-      ]
+      quotes
     };
   }
 };

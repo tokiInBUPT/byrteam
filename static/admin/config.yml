@@ -35,6 +35,16 @@ collections:
               - label: Url
                 name: url
                 widget: string
+          - name: quotes
+            label: Quotes
+            widget: list
+            fields:
+              - label: Content
+                name: content
+                widget: string
+              - label: From
+                name: from
+                widget: string
       - label: 服务
         name: services
         file: "data/services.json"
@@ -89,3 +99,6 @@ collections:
                   - name: img
                     label: Image
                     widget: image
+                  - name: link
+                    label: link
+                    widget: string
