@@ -111,5 +111,21 @@ export default {
         flex-flow: row nowrap
     .arrows
         margin-top: 1rem
-
+@media screen and (max-width: 600px)
+    .intro
+        flex-flow: column-reverse
+        margin-left: 20px
+        margin-right: 20px
+        margin-top: 0px
+    .swiper 
+        height: 16rem
+        width: auto
+    .intro-right .swiper-item img
+        height: 100px
+        margin-top: 0
+        margin-right: 0
+    .intro-left
+        width: auto
+        .title
+            width: auto
 </style>

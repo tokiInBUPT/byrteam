@@ -118,5 +118,22 @@ section.intro {
     height: 200px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    text-align center
+    .nav {
+      text-align center
+      ul {
+        padding 0
+        li {
+          margin 0 10px
+        }
+      }
+        
+    }
+  }
+}
 </style>
 

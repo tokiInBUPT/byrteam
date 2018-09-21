@@ -117,4 +117,18 @@ $author: jasonwu;
     }
   }
 }
+@media screen and (max-width: 600px) {
+  .slash-box, .cn, .en {
+    margin-left: 50px;
+  }
+  .item-list {
+    flex-wrap: wrap;
+    // .item {
+    //   margin: 0;
+    //   .title {
+    //     min-width: 0;
+    //   }
+    // } 
+  }
+}
 </style>
