@@ -52,7 +52,8 @@ export default {
       localStorage.setItem(`byr-inputs`, JSON.stringify(this.inputs));
       localStorage.setItem(`byr-department`, JSON.stringify(this.jobList));
       localStorage.setItem(`byr-trans-session`, 'true');
-      window.location.href = "/joinus";
+      // window.location.href = "/joinus";
+      window.location.href = "https://wj.qq.com/s/2711310/d62d";
     }
   },
   data: function() {

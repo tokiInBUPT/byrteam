@@ -29,7 +29,7 @@ export default {
           {
             title: '北邮人 BYRIO 小分队从重庆 SOSCON 18 学生开源年会胜利归来',
             desc: 'BYRIO 媒体',
-            url: 'SOSCON 18 演讲：为了创意者——开源社区与精神的拓展和延续',
+            url: 'https://byrio.org/soscon-18-after/',
             img: '/uploads/soscon.png'
           },
           {
