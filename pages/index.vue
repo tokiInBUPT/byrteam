@@ -2,7 +2,7 @@
   <div>
     <div class="page">
       <section class="header">
-        <a target="_blank"  href="/" class="logo">
+        <a href="/" class="logo">
           <img src="logo.png" />
         </a>
         <nav class="nav">
