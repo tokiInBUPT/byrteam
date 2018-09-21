@@ -2,7 +2,7 @@
   "groups": [
     {
       "name": "站务组",
-      "name_en": "FORUM AFFAIRS GROUP",
+      "name_en": "FORUM GROUP",
       "intro": "我们给遵纪守法的好公民颁发合法身份，分派权利！我们有全站\"官员\"的任免大权！我们手握大小版面的生杀大权！我们是全站飘的斑竹！碰到干坏事的要坚决关进小黑屋！碰到毁三观的帖子要坚决消灭干净！我们负责监督斑竹的权利，我们坚决维护广大用户的合法权益！",
       "slides": [
         {
@@ -14,23 +14,41 @@
     {
       "name": "技术组",
       "name_en": "DEVELOPE GROUP",
-      "intro": "BYR 坚强的技术后盾，新产品的研发中心。坚强的技术后盾， 新产品的研发中心。坚强的技术后盾，新产品的研发中心。<br>希望热爱技术的小伙伴加入我们一起玩！",
+      "intro": "BYR 坚强的技术后盾，新产品的研发中心，技术、运维、设计大佬应有尽有。",
       "links": [
         {
-          "title": "计划中 项目",
-          "url": "http://wiki.byr.moe"
+          "title": "Github",
+          "url": "http://github.com/byrIo"
         },
         {
           "title": "计划中项目",
-          "url": "http://wiki.byr.moe"
+          "url": "http://wiki.byr.moe/books/byrio/page/circle-idea"
+        },
+        {
+          "title": "BYRIO 技术社区",
+          "url": "http://byrio.org"
         }
       ],
-      "slides": []
+      "slides": [
+        {
+          "text": "我们维护 BYRIO 北邮互联网与开源社区，参与贡献 KDE.org 等国际开源软件项目，还有机会和清华 TUNA 、中科大 USTCLUG 的小伙伴们一起交流。",
+          "img": "/uploads/图层-21.png",
+          "link": "http://byrio.org/soscon-18-after/"
+        },
+        {
+          "text": "我们研究 Node.js 、Python 和 PHP ，我们部署 CI 、集群和 OpenShift ，我们讨论前后端 Web 开发和折腾智能硬件，我们维护开源技术社区并和清华科大的小伙伴们交流，我们维护论坛和 BT 、开发和设计新产品，探讨一切有趣的技术话题。"
+        },
+        {
+          "text": "我们还有强大的 UI 设计小组，不仅设计了你现在看到的团队主页、漂亮的 18 级迎新系统、 BYRIO.org 的一系列新产品，同时正紧张进行着 BYRBBS 的改版计划。",
+          "img": "/uploads/wx20180921-005633-2x.png",
+          "link": "http://wiki.byr.moe/books/byrio/page/circle-idea"
+        }
+      ]
     },
     {
       "name": "美工组",
       "name_en": "DESIGN GROUP",
-      "intro": "Banner？海报？台历？周边？web界面？冬夏坛服？毕业衫？新生服？<br> 对，是我们，全是我们，都是我们!<br>我们每天和设计打交道，为论坛各项活动宣传品的审美把关。只要你热爱设计追逐美学，在这里你会有一个巨大的舞台去燃烧你的小宇宙，你将收获身为一个美工人的骄傲与幸福。<br>手痒痒了？这两天北邮人正在招美工呢，要不要来试一下？",
+      "intro": "Banner？海报？台历？周边？web界面？冬夏坛服？毕业衫？新生服？对，是我们，全是我们，都是我们！<br>我们每天和设计打交道，为论坛各项活动宣传品的审美把关。只要你热爱设计追逐美学，在这里你会有一个巨大的舞台去燃烧你的小宇宙，你将收获身为一个美工人的骄傲与幸福。<br>手痒痒了？这两天北邮人正在招美工呢，要不要来试一下？",
       "links": [],
       "slides": [
         {
@@ -59,7 +77,7 @@
     },
     {
       "name": "文宣组",
-      "name_en": "WRITING GROUP",
+      "name_en": "PUBLICIZE GROUP",
       "intro": "我们用手中的笔为论坛添砖加瓦，用奇思妙想为帖子增色添彩。我们善于妙笔生花，鸿笔丽藻，急转直下。我们是论坛幕后的“键盘侠”。",
       "slides": [
         {
