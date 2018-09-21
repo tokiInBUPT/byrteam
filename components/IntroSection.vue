@@ -8,8 +8,8 @@
                 </swiper-item>
             </swiper>
             <div class="btns">
-                <btn>立即报名</btn>
-                <btn :flat="true">加群咨询</btn>
+                <a href="#joinus" style="text-decoration: none"><btn>立即报名</btn></a>
+                <a href="javascript:alert('迎新咨询 QQ 群 767254566')" style="text-decoration: none"><btn :flat="true">加群咨询</btn></a>
             </div>
             <swiper-arrows 
                 :isFirst="introCurrentIdx == 0" 
@@ -45,7 +45,8 @@ export default {
   data() {
     return {
       introCurrentIdx: 0,
-      intros
+      intros,
+      jiaqun: '加群咨询'
     };
   }
 };

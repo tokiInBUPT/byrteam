@@ -8,7 +8,7 @@
         <nav class="nav">
           <ul>
             <li v-for="nav in navs" :key="nav.title">
-              <a target="_blank"  :href="nav.url">{{nav.title}}</a>
+              <a :href="nav.url">{{nav.title}}</a>
             </li>
           </ul>
         </nav>

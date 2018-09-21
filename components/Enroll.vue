@@ -70,8 +70,8 @@ export default {
       type: Array,
       default: () => {
         return [
-          { title: "技术组", selected: true },
-          { title: "UI组", selected: false },
+          { title: "技术方向-技术组", selected: true },
+          { title: "UI方向-技术组", selected: false },
           { title: "美工组", selected: false },
           { title: "文宣组", selected: false },
           { title: "站务组", selected: false },

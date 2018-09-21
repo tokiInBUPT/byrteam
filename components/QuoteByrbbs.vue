@@ -54,7 +54,7 @@ $author:jasonwu;
     width: 32rem;
     position: relative;
     &>.swiper {
-      height: 100%;
+      height: 200%;
       margin-bottom: 0.5rem;
     }
     .quote {
