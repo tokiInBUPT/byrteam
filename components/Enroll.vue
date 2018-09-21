@@ -175,5 +175,25 @@ $author: jasonwu;
     }
   }
 }
+@media screen and (max-width: 600px) {
+  .root {
+    margin-top: 130px;
+    .form {
+      width: auto;
+      text-align: center;
+      .inputs {
+        .input {
+          // width: 80%;
+          margin: 0 auto;
+        }
+      }
+      .department {
+        .title {
+          margin: 12px 0 0 12px;
+        }
+      }
+    }
+  }
+}
 </style>
 
