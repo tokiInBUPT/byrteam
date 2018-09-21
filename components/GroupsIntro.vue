@@ -44,6 +44,12 @@ import SwiperItem from "~/components/SwiperItem";
 import SwiperArrows from "~/components/SwiperArrows";
 import { groups } from "~/data/groups.json";
 export default {
+  mounted() {
+    if (window.location.hash == '#groups') {
+      var anchor = this.$el
+      window.scrollTo(0,anchor.offsetTop)
+    }
+  },
   components: {
     Swiper,
     SwiperItem,

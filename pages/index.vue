@@ -17,7 +17,9 @@
       <intro-section />
       <service />
       <QuoteByrbbs/>
+      <a name="joinus"></a>
       <enroll id="joinus" />
+      <a name="groups"></a>
       <groups-intro id="groups" />
     </div>
     <Footer />

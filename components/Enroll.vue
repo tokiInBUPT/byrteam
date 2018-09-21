@@ -44,6 +44,12 @@
 </template>
 <script>
 export default {
+  mounted() {
+    if (window.location.hash == '#joinus') {
+      var anchor = this.$el
+      window.scrollTo(0,anchor.offsetTop)
+    }
+  },
   methods: {
     OnJobClick(index) {
       this.jobList[index].selected ^= 1;
