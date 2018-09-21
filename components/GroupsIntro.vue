@@ -142,5 +142,32 @@ export default {
 					margin: 10px 0
 					max-height: 150px
 					object-fit: cover
-
+@media screen and (max-width: 600px)
+	.GroupsIntro
+		ul.groups
+			li.group, li.group:nth-child(even) 
+				height auto
+				padding-bottom 300px
+				margin-left 30px
+				margin-right 30px
+				.info
+					padding 0
+					text-align left
+					p
+						padding-right 0
+						padding-left 0
+						text-align-last left
+					ul
+						li
+							margin-bottom 18px
+				.slideCtn
+					left auto
+					right auto
+					text-align left 
+					position relative
+					margin 50px -30px 180px 10px
+				&::before
+					right auto
+					top auto 
+					left auto
 </style>
