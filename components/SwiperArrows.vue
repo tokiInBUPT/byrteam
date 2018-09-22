@@ -7,15 +7,16 @@
             </div>
 </template>
 <script>
+const swiperAutoChangePeriod = 5000;
 export default {
     props:['isFirst','isLast'],
     mounted(){
         setInterval(()=>{
-            if(this.isLast) 
+            if(this.isLast)
                this.$emit('first');
-            else 
+            else
                 this.$emit('next');
-        },2000);
+        },swiperAutoChangePeriod);
     }
 
 }
