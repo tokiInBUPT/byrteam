@@ -8,7 +8,15 @@
 </template>
 <script>
 export default {
-    props:['isFirst','isLast']
+    props:['isFirst','isLast'],
+    mounted(){
+        setInterval(()=>{
+            if(this.isLast) 
+               this.$emit('first');
+            else 
+                this.$emit('next');
+        },2000);
+    }
 
 }
 </script>
