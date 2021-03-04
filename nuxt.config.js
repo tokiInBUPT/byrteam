@@ -1,4 +1,7 @@
 module.exports = {
+  router: {
+    base: './'
+  },
   css: [
     { src: '~assets/global.styl', lang: 'stylus' }
   ],
@@ -27,7 +30,7 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    extend (config, { isDev, isClient }) {
+    extend(config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
