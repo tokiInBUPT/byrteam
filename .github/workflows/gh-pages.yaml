@@ -1,0 +1,35 @@
+name: GitHub Actions Build and Deploy
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+  
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
+        with:
+          persist-credentials: false
+
+      # Install node js
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: 10.x
+
+      - name: Build
+        run: |
+          npm install
+          npm run generate 
+    
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.0.0
+        with:
+          BRANCH: gh-pages
+          FOLDER: dist
+          CLEAN: true
