@@ -2,33 +2,33 @@
   "services": [
     {
       "title": "北邮人论坛",
-      "imgUrl": "/uploads/services-byrbbs.png",
+      "imgUrl": "./uploads/services-byrbbs.png",
       "url": "https://bbs.byr.cn"
     },
     {
       "title": "北邮人 BT",
-      "imgUrl": "/uploads/services-byrbt.png",
+      "imgUrl": "./uploads/services-byrbt.png",
       "url": "https://bt.byr.cn/"
     },
     {
       "title": "北邮人 IPTV",
-      "imgUrl": "/uploads/services-iptv.png",
+      "imgUrl": "./uploads/services-iptv.png",
       "url": "https://tv.byr.cn/"
     },
     {
       "title": "BYRIO 开源社区",
-      "imgUrl": "/uploads/services-byrio.png",
+      "imgUrl": "./uploads/services-byrio.png",
       "url": "https://byrio.org/"
     },
     {
       "title": "北邮人博客圈",
-      "imgUrl": "/uploads/services-blogroll.png",
-      "url": "http://planet.byr.moe/"
+      "imgUrl": "./uploads/services-blogroll.png",
+      "url": "https://planet.byr.moe/"
     },
     {
       "title": "易班生活服务",
-      "imgUrl": "/uploads/services-yiban.png",
-      "url": "http://www.yiban.cn/"
+      "imgUrl": "./uploads/services-yiban.png",
+      "url": "https://www.yiban.cn/"
     }
   ]
 }
