@@ -70,23 +70,23 @@ export default {
         year: '',
         school: '学院'
       },
+      jobList: {
+        type: Array,
+        default: () => {
+          return [
+            { title: "技术方向-技术组", selected: true },
+            { title: "UI方向-技术组", selected: false },
+            { title: "美工组", selected: false },
+            { title: "文宣组", selected: false },
+            { title: "站务组", selected: false },
+            { title: "新媒体组", selected: false },
+            { title: "产品运营组", selected: true },
+          ];
+        }
+      }
     };
   },
   props: {
-    jobList: {
-      type: Array,
-      default: () => {
-        return [
-          { title: "技术方向-技术组", selected: true },
-          { title: "UI方向-技术组", selected: false },
-          { title: "美工组", selected: false },
-          { title: "文宣组", selected: false },
-          { title: "站务组", selected: false },
-          { title: "新媒体组", selected: false },
-          { title: "产品运营组", selected: true },
-        ];
-      }
-    }
   }
 };
 </script>

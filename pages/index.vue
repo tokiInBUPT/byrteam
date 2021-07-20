@@ -30,9 +30,6 @@
 <script>
 import FooterArticle from "~/components/FooterArticle.vue";
 import GroupsIntro from "~/components/GroupsIntro.vue";
-import Swiper from "~/components/Swiper";
-import SwiperItem from "~/components/SwiperItem";
-import Btn from "~/components/Btn";
 import IntroSection from "~/components/IntroSection.vue";
 import Enroll from "~/components/Enroll.vue";
 import Footer from "~/components/Footer.vue";
@@ -41,9 +38,6 @@ import QuoteByrbbs from "~/components/QuoteByrbbs.vue";
 import {navs} from "~/data/intro.json";
 export default {
   components: {
-    Swiper,
-    SwiperItem,
-    Btn,
     IntroSection,
     FooterArticle,
     GroupsIntro,
