@@ -6,7 +6,8 @@ import {
   Main,
   Carousel,
   CarouselItem,
-  Tag
+  Tag,
+  Message
 } from 'element-ui';
 
 Vue.config.productionTip = true;
@@ -17,6 +18,8 @@ Vue.use(Main);
 Vue.use(Carousel);
 Vue.use(CarouselItem);
 Vue.use(Tag);
+
+Vue.prototype.$message = Message;
 
 new Vue({
   render: h => h(App),

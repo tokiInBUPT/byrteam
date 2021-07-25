@@ -5,39 +5,46 @@
       <div class="joinus-title-en">Join us</div>
     </div>
     <div class="joinus-button">
-      <el-button type="primary" >
-        <a>立即报名</a>
-      </el-button>
+      <a>
+        <el-button type="primary" @click="info"> 立即报名 </el-button>
+      </a>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+    methods:{
+        info(){
+            this.$message.info('暂时还没有报名链接，请等待正式开始！');
+        }
+    }
+};
 </script>
 
 <style lang="less">
-.joinus{
-    width: 50%;
-    margin: 48px auto;
-    text-align: center;
+.joinus {
+  width: 50%;
+  margin: 48px auto;
+  text-align: center;
 
-    &-title{
-        margin: 0 auto;
-        width: 8rem;
-        padding-bottom: 14px;
-        padding-top: 14px;
-        border-top: .3rem solid #6cf;
-        border-bottom: .3rem solid #6cf;
-        &-cn,&-en {
-            font-size: 1.3rem;
-        }
+  &-title {
+    margin: 0 auto;
+    width: 8rem;
+    padding-bottom: 14px;
+    padding-top: 14px;
+    border-top: 0.3rem solid #6cf;
+    border-bottom: 0.3rem solid #6cf;
+    &-cn,
+    &-en {
+      font-size: 1.3rem;
     }
-    &-button{
-        margin-top: 40px;
-        button {
-            width: 100%;
-        }
+  }
+  &-button {
+    margin-top: 40px;
+    button {
+      width: 100%;
     }
+  }
 }
 </style>

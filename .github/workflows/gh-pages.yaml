@@ -2,10 +2,10 @@ name: GitHub Actions Build and Deploy
 on:
   push:
     branches:
-      - master-refactor
+      - master
   pull_request:
     branches:
-      - master-refactor
+      - master
   
 jobs:
   build-and-deploy:
