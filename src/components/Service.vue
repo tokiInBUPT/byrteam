@@ -18,7 +18,7 @@
       >
         <a target="_blank" :href="service.url">
           <img :src="require('../assets/image/' + service.img)" />
-          <div class="service-title">{{ service.title }}</div>
+          <div class="service-item-title">{{ service.title }}</div>
         </a>
       </div>
     </div>
@@ -39,7 +39,7 @@ export default {
 
 <style lang="less">
 .service {
-  margin-top: 32px;
+  margin-top: 64px;
 
   &-list {
     margin: 0 auto;
@@ -50,8 +50,12 @@ export default {
   }
 
   &-item {
+    width: 64px;
+    height: 64px;
+
     display: flex;
     a {
+      width: 100%;
       text-decoration: none;
       font-size: 12px;
       color: #333;
@@ -104,10 +108,10 @@ export default {
     }
 
     &-item {
-        margin: auto 20px;
-        div {
-            margin-left: 0;
-        }
+      margin: auto 20px;
+      div {
+        margin-left: 0;
+      }
     }
   }
 }

@@ -5,21 +5,19 @@
       <div class="joinus-title-en">Join us</div>
     </div>
     <div class="joinus-button">
-      <a>
-        <el-button type="primary" @click="info"> 立即报名 </el-button>
-      </a>
+      <el-button type="primary" @click="info"> 立即报名 </el-button>
     </div>
   </div>
 </template>
 
 <script>
+export function info(){
+  window.open("https://wenjuan.feishu.cn/m?t=s0m2gKVkTqui-9e6q");
+}
 export default {
-  methods: {
-    info() {
-      window.open("https://wenjuan.feishu.cn/m?t=s0m2gKVkTqui-9e6q");
-      //this.$message.info('暂时还没有报名链接，请等待正式开始！');
-    },
-  },
+  methods:{
+    info
+  }
 };
 </script>
 

@@ -1,6 +1,6 @@
 <template>
   <section class="intro">
-    <el-carousel height="400px" :interval="0" >
+    <el-carousel height="450px" :interval="3000" indicator-position="none">
       <el-carousel-item
         v-for="(intro, index) in intros"
         :key="index"
@@ -20,23 +20,45 @@
         </div>
       </el-carousel-item>
     </el-carousel>
+    <div class="intro-button">
+      <el-button type="primary" @click="info">立即报名</el-button>
+      <el-button @click="showGroup">加群咨询</el-button>
+    </div>
   </section>
 </template>
 
 <script>
 import { intros } from "../data/intro.json";
+import {info} from './Joinus.vue';
 
 export default {
   data() {
     return {
       intros,
+      group : '925670326',
     };
+  },
+  methods: {
+    info,
+    showGroup() {
+      let input = document.createElement('input');
+      input.setAttribute('value',this.group);
+      document.body.appendChild(input);
+      input.select();
+      if(document.execCommand('copy')){
+        window.alert("迎新咨询 QQ 群 "+this.group+' ,帮你复制啦 ');
+      }else {
+        window.alert("迎新咨询 QQ 群 "+this.group+' ,请手动复制 ');
+      }
+      document.body.removeChild(input);
+    },
   },
 };
 </script>
 
 <style lang="less">
 .intro {
+  position: relative;
   &-slide {
     display: flex;
   }
@@ -46,8 +68,8 @@ export default {
     margin-top: 7rem;
     text-align: left;
     padding-right: 16px;
-    &-title{
-        font-size: 1.9rem;
+    &-title {
+      font-size: 1.9rem;
     }
     &-desc {
       width: 80%;
@@ -66,6 +88,13 @@ export default {
       border-radius: 70% 30% 70% 30%;
     }
   }
+
+  &-button {
+    position: absolute;
+    z-index: 5;
+    bottom: 20px;
+    left: 10px;
+  }
 }
 
 @media screen and(max-width:600px) {
@@ -78,18 +107,26 @@ export default {
       margin-top: 10px;
       padding-left: 1.7rem;
       width: auto;
-      &-title{
-          font-size: 1.7rem;
+      &-title {
+        font-size: 1.7rem;
       }
       &-desc {
-          width: 100%;
+        width: 100%;
       }
     }
-    &-right{
-        height: auto;
-        img {
-            height: 100px;
-        }
+    &-right {
+      height: fit-content;
+      img {
+        height: 200px;
+        border-radius: 0;
+        object-position: center;
+      }
+    }
+    &-button {
+      position: relative;
+      margin-top: 16px;
+      bottom: 0;
+      left: 0;
     }
   }
 }
