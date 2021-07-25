@@ -16,17 +16,47 @@
       "url": "https://tv.byr.cn/"
     },
     {
-      "title": "BYRIO 开源社区",
+      "title": "BYRIO社区",
       "img": "services-byrio.png",
       "url": "https://byrio.org/"
     },
     {
-      "title": "北邮人博客圈",
+      "title": "Gitlab",
+      "img": "services-gitlab.png",
+      "url": "https://git.byr.ac.cn/"
+    },
+    {
+      "title": "BYR Wiki",
+      "img": "services-byrwiki.png",
+      "url": "https://wiki.byrio.org/"
+    },
+    {
+      "title": "Bitwarden",
+      "img": "services-bitwarden.png",
+      "url": "https://bitwarden.byrio.work/"
+    },
+    {
+      "title": "Overleaf",
+      "img": "services-overleaf.png",
+      "url": "https://cn.overleaf.byrio.work/"
+    },
+    {
+      "title": "CodiMD",
+      "img": "services-codimd.png",
+      "url": "https://md.byr.edu.cn/"
+    },
+    {
+      "title": "Mirrors",
+      "img": "services-mirrors.png",
+      "url": "https://mirrors.byrio.org/"
+    },
+    {
+      "title": "BlogRoll",
       "img": "services-blogroll.png",
       "url": "https://planet.byr.moe/"
     },
     {
-      "title": "易班生活服务",
+      "title": "Yiban",
       "img": "services-yiban.png",
       "url": "https://www.yiban.cn/"
     }

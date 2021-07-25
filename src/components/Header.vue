@@ -1,7 +1,7 @@
 <template>
   <section class="header">
     <a href="/" class="logo">
-      <img src="../assets/image/logo.png" />
+      <img src="../assets/image/logo-2021.png" />
     </a>
     <nav>
       <ul>

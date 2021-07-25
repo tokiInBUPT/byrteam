@@ -14,11 +14,12 @@
 
 <script>
 export default {
-    methods:{
-        info(){
-            this.$message.info('暂时还没有报名链接，请等待正式开始！');
-        }
-    }
+  methods: {
+    info() {
+      window.open("https://wenjuan.feishu.cn/m?t=s0m2gKVkTqui-9e6q");
+      //this.$message.info('暂时还没有报名链接，请等待正式开始！');
+    },
+  },
 };
 </script>
 
