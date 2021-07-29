@@ -50,9 +50,8 @@ export default {
   }
 
   &-item {
-    width: 64px;
-    height: 64px;
-
+    width: 72px;
+    height: 72px;
     display: flex;
     a {
       width: 100%;

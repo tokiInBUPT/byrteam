@@ -32,6 +32,9 @@ export default {
     height: 100%;
     margin: 0 auto;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     .quote {
       font-size: 1.15rem;

@@ -9,17 +9,19 @@
       <Group-intro />
     </div>
     <Footer />
+    <FooterArticle />
   </div>
 </template>
 
 <script>
-import Footer from './components/Footer.vue';
-import GroupIntro from './components/GroupIntro.vue';
+import Footer from "./components/Footer.vue";
+import FooterArticle from "./components/FooterArticle.vue";
+import GroupIntro from "./components/GroupIntro.vue";
 import Header from "./components/Header.vue";
-import Intro from './components/Intro.vue';
-import Joinus from './components/Joinus.vue';
-import QuoteBYRBBS from './components/QuoteBYRBBS.vue';
-import Service from './components/Service.vue';
+import Intro from "./components/Intro.vue";
+import Joinus from "./components/Joinus.vue";
+import QuoteBYRBBS from "./components/QuoteBYRBBS.vue";
+import Service from "./components/Service.vue";
 
 export default {
   name: "App",
@@ -31,18 +33,23 @@ export default {
     Joinus,
     GroupIntro,
     Footer,
+    FooterArticle,
   },
 };
 </script>
 
 <style>
+body {
+  margin: 0;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   font-size: 14px;
   color: #2c3e50;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB,
+    Microsoft YaHei, Arial, sans-serif;
 }
 .page {
   max-width: 960px;
