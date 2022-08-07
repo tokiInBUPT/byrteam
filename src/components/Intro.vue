@@ -17,8 +17,8 @@
             </el-carousel-item>
         </el-carousel>
         <div class="intro-button">
-            <el-button type="primary" @click="info">立即报名</el-button>
-            <el-button @click="showGroup">加群咨询</el-button>
+            <el-button size="large" type="primary" @click="info">立即报名</el-button>
+            <el-button size="large" @click="showGroup">加群咨询</el-button>
         </div>
     </section>
 </template>

@@ -5,7 +5,7 @@
       <div class="joinus-title-en">Join us</div>
     </div>
     <div class="joinus-button">
-      <el-button type="primary" @click="info"> 立即报名 </el-button>
+      <el-button size="large" type="primary" @click="info"> 立即报名 </el-button>
     </div>
   </div>
 </template>

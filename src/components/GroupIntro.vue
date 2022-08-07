@@ -8,7 +8,7 @@
                     <p class="group-info-desc" v-html="'<p>' + group.intro.replace(/\<br\>/g, '</p><p>') + '</p>'" />
                     <div class="group-info-tags" v-for="(link, index) in group.links" :key="index">
                         <a :href="link.url" target="_blank">
-                            <el-tag>{{ link.title }}</el-tag>
+                            <el-tag size="large">{{ link.title }}</el-tag>
                         </a>
                     </div>
                 </div>
