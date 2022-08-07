@@ -21,7 +21,7 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style lang="scss">
 .joinus {
   width: 50%;
   margin: 48px auto;
