@@ -30,6 +30,8 @@ import { info } from './Joinus.vue';
 export default {
     setup() {
         const showGroup = () => {
+            location.href = 'https://jq.qq.com/?_wv=1027&k=0KS0oyRH';
+            return;
             let input = document.createElement('input');
             input.setAttribute('value', this.group);
             document.body.appendChild(input);
